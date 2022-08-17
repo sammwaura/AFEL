@@ -30,6 +30,14 @@ section{
     padding: 5rem 10%;
 }
 
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: black;
+}
+
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -66,7 +74,125 @@ section{
     display: none;
 }
 
+.home{
+    padding: 0;
 
+}
+
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: cover !important;
+    min-height: 60rem;
+}
+
+.home .slide .content{
+    width: 85rem;
+
+}
+
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: whitesmoke;
+    padding-bottom: 1rem;
+}
+
+.home .slide .content h3{
+    font-size: 6vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0 1.5rem 3rem black;
+    padding: 1rem 0;
+    animation: fadeIn .4s  linear backwards .4s;
+}
+
+.home .slide .content .btn{
+    animation: fadeIn 3s linear backwards .4s;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: green;
+}
+
+.services .box-container .box:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.services .box-container .box img{
+    height: 7rem;
+}
+
+.services .box-container .box h3{
+    color: white;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+
+
+.footer{
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer .box-container .box a{
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+
+.footer .box-container .box a i{
+    color: green;
+    padding: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top:  .1rem solid white;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.footer .credit span{
+    color: green;
+}
 
 
 
@@ -95,6 +221,11 @@ section{
 
     #menu-btn{
         display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
     }
 
     .header .navbar{
@@ -103,6 +234,7 @@ section{
         background-color: white;
         border-top: .1rem solid black;
         padding: 2rem;
+        transition: .2s linear;
     }
 
     .header .navbar a{
@@ -115,6 +247,10 @@ section{
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+
+    .heading-title{
+        font-size: 3.5rem;
     }
 }
 
