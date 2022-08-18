@@ -39,7 +39,7 @@ section{
 
 .btn{
     display: inline-block;
-    background: black;
+    background: burlywood;
     margin-top: 1rem;
     color: white;
     font-size: 1.7rem;
@@ -48,7 +48,7 @@ section{
 }
 
 .btn:hover{
-    background: green;
+    background: darkolivegreen;
 }
 
 
@@ -86,7 +86,7 @@ section{
 }
 
 .header .navbar a:hover{
-    color: green;
+    color: darkolivegreen;
 
 }
 
@@ -158,7 +158,7 @@ section{
       }
 .home .swiper-button-next:hover,
         .swiper-button-prev:hover{
-    background: green;
+    background: darkolivegreen;
     color: white;
 }
 
@@ -242,9 +242,37 @@ section{
 .home-packages .box-container .box .content p{
     font-size: 1.5rem;
     color: darkolivegreen;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home-packages .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-offer{
+    text-align: center;
+}
+
+.home-offer .content{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.home-offer .content h3{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: black;
 }
 
 
+.home-offer .content p{
+    font-size: 1.5rem;
+    color: black;
+    line-height: 2;
+    padding: 1rem 0;
+}
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -254,11 +282,11 @@ section{
 .services .box-container .box{
     padding: 3rem 2rem;
     text-align: center;
-    background-color: burlywood;
+    background-color: darkolivegreen;
 }
 
 .services .box-container .box:hover{
-    background-color: black;
+    background-color: bisque;
     cursor: pointer;
 }
 
@@ -267,7 +295,7 @@ section{
 }
 
 .services .box-container .box h3{
-    color: white;
+    color: peru;
     font-size: 1.7rem;
     padding-top: 1rem;
 }
